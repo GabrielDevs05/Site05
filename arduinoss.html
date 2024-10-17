@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino Semaforo Simples</title>
+</head>
+<body>
+    <header>
+        <div class="btns">
+            <button class="btn" onclick="location.href='index.html'">Voltar</button>
+        </div>
+    </header>
+    <hr>
+    <h1>Arduíno na Prática – Semaforo Simples</h1>
+    <br>
+    <h2>Programação do Semáforo Simples com Contador de LED Intermitente</h2>
+    <img src="assets/semaforo_simples/kirchoff_ledvermelho.jpg" alt="Semafaro Simples na Prática" height="450"><br>
+    <br><br>
+    <h2>Vídeo da Montagem Prática</h2>
+    <iframe src="assets/semaforo_simples/video1.mp4" frameborder="0" allowfullscreen height="450"></iframe>
+    <br>
+    <h2>Código C++ da IDE ARDUÍNO</h2>
+    <img src="assets/semaforo_simples/printsemaforosimples.jpg" alt="Semaforo Simples Cod IDE"><br>
+    <small>Fonte: </small>
+    <a href="https://www.arduino.cc/en/software">Arduino IDE</a>
+    <br><br>
+    <h2>Código C++</h2>
+    <pre>
+        <code>
+            //C++ code
+            //
+            int cont = 0;
+            
+            void setup()
+            {
+              pinMode(12, OUTPUT);
+              pinMode(8, OUTPUT); 
+              pinMode(10, OUTPUT);
+            
+              cont = 1;
+            }
+            
+            void loop()
+            {
+              If (cant 2) {
+                digitalWrite(12, HIGH);
+                delay (7000); 
+                digitalWrite(8, HIGH); digitalWrite(12, LOW);
+                delay(5000); 
+                digitalWrite(10, HIGH);
+                digitalWrite(8, LOW);
+                delay(2000); 
+                digitalWrite(10, LOW);
+                delay(1); 
+              } else {
+                digitalWrite(10, HIGH);
+                delay(1000); 
+                digitalWrite(10, LOW);
+                delay(1000); 
+                delay(1); 
+              }
+              Cont += 1;
+            }
+        </code>
+    </pre>
+    <hr>
+    <footer>
+        <p>Desenvolvido por Gabriel André Ribeiro</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino Semaforo Duplo</title>
+</head>
+<body>
+    <header>
+        <div class="btns">
+            <button class="btn" onclick="location.href='index.html'">Voltar</button>
+        </div>
+    </header>
+    <hr>
+    <h1>Arduino na Prática – Semaforo Duplo</h1>
+    <br>
+    <h2>Programação do Semáforo Duplo</h2>
+    <img src="assets/semaforo_duplo/montagempratica.jfif" alt="Semafaro Duplo Montagem Pratica" height="400">
+    <br><br>
+    <h2>Vídeo da Montagem Prática</h2>
+    <iframe src="assets/semaforo_duplo/video.mp4" frameborder="0" allowfullscreen height="450"></iframe>
+    <br><br>
+    <h2>Código C++ da IDE ARDUÍNO</h2>
+    <img src="assets/semaforo_duplo/arduinoIDEsemaforoDUPLO.png" alt="Semaforo Duplo IDE Arduino"><br>
+    <small>Fonte: </small>
+    <a href="https://www.arduino.cc/en/software">Arduino IDE</a>
+    <br><br>
+    <h2>Código C++</h2>
+    <pre>
+        <code>
+            void setup()
+            {
+              pinMode(A5, OUTPUT);
+              pinMode(A0, OUTPUT);
+              pinMode(A3, OUTPUT);
+              pinMode(A2, OUTPUT);
+              pinMode(A1, OUTPUT);
+              pinMode(A4, OUTPUT);
+            }
+            
+            void loop()
+            {
+              digitalWrite(A5, HIGH);
+              digitalWrite(A0, HIGH);
+              digitalWrite(A3, LOW);
+              digitalWrite(A2, LOW);
+              digitalWrite(A1, LOW);
+              delay(9000); 
+              digitalWrite(A0, LOW);
+              digitalWrite(A4, HIGH);
+              digitalWrite(A5, LOW);
+              digitalWrite(A2, HIGH);
+              delay(2000); 
+              digitalWrite(A4, LOW);
+              digitalWrite(A3, HIGH);
+              delay(7000); 
+              digitalWrite(A1, HIGH);
+              digitalWrite(A2, LOW);
+              digitalWrite(A3, LOW);
+              digitalWrite(A5, HIGH);
+              delay(2000); 
+              delay(1); 
+            }
+        </code>
+    </pre>
+    <hr>
+    <footer>
+        <p>Desenvolvido por Gabriel André Ribeiro</p>
+    </footer>
+</body>
+</html>
